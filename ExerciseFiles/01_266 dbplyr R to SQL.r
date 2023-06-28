@@ -19,7 +19,7 @@ library(tidyverse)
 
 # first, load in sample SQLite table
 library(RSQLite)
-sqlcon <- dbConnect(RSQLite::SQLite(), dbname="Chinook_Sqlite.sqlite")
+sqlcon <- dbConnect(RSQLite::SQLite(), dbname="Chinook_Sqlite.sqlite") # set directory to the exercise files
 
 # check the SQL connection by displaying the "Invoice" table
 tbl(sqlcon, "Invoice")
